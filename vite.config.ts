@@ -6,7 +6,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [
     react(),
-    dts({ exclude: ["**/*.stories.ts", "**/*.test.tsx"]}),
+    dts({ insertTypesEntry: true, exclude: ["**/*.stories.ts", "**/*.test.tsx"]}),
   ],
   build: { 
     lib: { 
